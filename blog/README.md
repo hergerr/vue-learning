@@ -3,6 +3,8 @@
 ## Project setup
 ```
 yarn install
+# server
+npx json-server --watch data/db.json
 ```
 
 ### Compiles and hot-reloads for development
