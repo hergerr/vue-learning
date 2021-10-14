@@ -4,27 +4,25 @@
       "id": 1,
       "title": "welcome to the new blog",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "tags": [
-        "webdev",
-        "coding",
-        "news"
-      ]
+      "tags": ["webdev", "coding", "news"]
     },
     {
       "id": 2,
       "title": "top 5 CSS tips",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "tags": [
-        "css",
-        "webdev",
-        "coding"
-      ]
+      "tags": ["css", "webdev", "coding"]
     },
     {
-      "title": "sdankjsdnak",
-      "body": "nkjnkjnkj",
-      "tags": [],
-      "id": 3
+      "id": 2,
+      "title": "top 5 HTML tips",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "tags": ["HTML", "webdev", "coding"]
+    },
+    {
+      "id": 2,
+      "title": "top 5 JS tips",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "tags": ["js", "webdev", "coding"]
     }
   ]
 }

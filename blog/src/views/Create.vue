@@ -1,6 +1,7 @@
 <template>
   <div class="create">
-    <form @submit="submitForm">
+    <!-- prevent !!! important for routing to work -->
+    <form @submit.prevent="submitForm">
       <label>Title:</label>
       <input v-model="title" type="text" required />
       <label>Content:</label>
@@ -16,12 +17,15 @@
 
 <script>
 import { ref } from "@vue/reactivity";
+import { useRouter } from "vue-router";
 export default {
   setup() {
     const title = ref("");
     const body = ref("");
     const tag = ref("");
     const tags = ref([]);
+
+    const router = useRouter();
 
     const handleKeyDown = () => {
       if (!tags.value.includes(tag.value)) {
@@ -34,9 +38,14 @@ export default {
     const submitForm = async () => {
       await fetch("http://localhost:3000/posts", {
         method: "POST",
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({ title: title.value, body: body.value, tags: tags.value }),
-      })
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          title: title.value,
+          body: body.value,
+          tags: tags.value,
+        }),
+      });
+      router.push({name: 'Home'})
     };
 
     return { title, body, tag, tags, handleKeyDown, submitForm };

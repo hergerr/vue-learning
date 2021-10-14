@@ -14,13 +14,10 @@ export default {
   components: { SinglePost },
   setup(props) {
     onMounted(() => {
-      console.log("mounted");
     });
     onUnmounted(() => {
-      console.log("unmounted");
     });
     onUpdated(() => {
-      console.log("updated");
     });
   },
 };
